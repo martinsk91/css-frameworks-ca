@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/index.css">
+    <script type="module" src="/js/index.js"></script>
+    <title>Document</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="container d-flex flex-column justify-content-center align-items-center mt-5 flex-grow-1 text-center">
+      <h1 class="h3 mb-3 fw-bold  col-4">Welcome to ShareSpace</h1>
+      <div class="col-8 col-md-6 col-lg-4 bg-primary d-flex justify-content-center align-items-center mt-5 rounded">
+      
+        <form action="/feed/">
+         
+          
+      
+          <div class="form-floating my-5">
+            <input type="email" class="form-control border border-3 rounded border-black" id="floatingInput" placeholder="name@example.com" required>
+            <label class="fw-bold" for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating my-5">
+            <input type="password" class="form-control border border-3 rounded border-black" id="floatingPassword" placeholder="Password" minlength="8" required>
+            <label class="fw-bold"for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="form-check text-start mb-5">
+            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+          <button class="btn btn-success col-12 py-3 rounded-pill mb-5" type="submit">Sign in</button>
+        
+        </form>
+    </div>
+    <p class="col-8">New user? Click <a class="fw-bold text-success" href="#">here</a> to create a new account</p>
+    </main>
+
+</body>
+</html>
