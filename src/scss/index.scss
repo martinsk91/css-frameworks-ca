@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-p {
-    margin: 0 !important;
-}
-.overflow-y-auto 
-{
-    overflow-y: auto;
-    height: 100vh;
-}
 
-.overflow-y-auto::-webkit-scrollbar {
-    display: none;
-  }
+
+
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "variables";
@@ -22,6 +13,15 @@ p {
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+p {
+    margin: 0 !important;
+}
+.overflow-y-auto 
+{
+    overflow-y: auto;
+    height: 100vh;
+}
 
 
 
