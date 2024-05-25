@@ -1,24 +1,24 @@
-// export function postTemplateA(postData){
-//     return `<div class="post"><h2>${postData.title}
-//     </h2><p>${postData.body}</p></div>`;
-// }
+// import { specificPost } from "../api/getID.js";
 
 export function postTemplate(postData){
     const postCard = document.createElement("div");
     const h2 = document.createElement("h2");
     const postContent = document.createElement("p");
+    const postLink = document.createElement("a");
     postCard.classList.add("col-12", "col-md-8","border",
      "border-black","rounded","my-5","p-5","container",
      "d-flex","flex-column","align-items-center");
   
 
 
-    postCard.append(h2, postContent);
+    postCard.append(h2, postContent, postLink);
     h2.innerText = postData.title;
     postContent.innerText = postData.body; 
-
+    postLink.href = `post.html?id=${postData.id}`
+    postLink.innerText = "edit post"
+  
     return postCard;
-
+  
 }
 
 
@@ -30,3 +30,4 @@ export function renderPostTemplate(posts, parent){
     });
    
 }
+

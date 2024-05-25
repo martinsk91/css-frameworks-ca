@@ -1,7 +1,11 @@
-import { createPost } from "../posts/create.mjs";
 
-export function addCreatePostListener(){
-    const form = document.querySelector("#createPost");
+import { updatePost } from "../posts/update.mjs";
+
+export function addUpdatePostListener(){
+    const form = document.querySelector("#updatepost");
+    const url = new URL(location.href);
+    const id = url.searchParams.get("id");
+
 
     form.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -15,10 +19,22 @@ export function addCreatePostListener(){
         const post = {
             title: title,
             body: body,
+            id: id
          
         }
     
         console.log(post);
-       createPost(post);
+       updatePost(post);
     })
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/index.css">
+    <script src="/js/index.js" type="module"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+ 
+    <i class="bi bi-plus-circle"></i>
+    <nav class="navbar navbar-expand bg-primary" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+       
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <a class="navbar-brand" href="/feed/"><h2 class="display-3">S</h2></a>
+     
+        <!-- <form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form> -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center">
+                     
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Sign Out</a>
+            </li>
+       
+
+            <div class="col-2 col-md-1">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/index.html"><img src="/images/profile.png" alt="" class="w-100"></a>
+            </li>
+         
+          </div>
+         
+          </ul>
+      
+     
+ 
+      </div>
+    </nav>
+    </header>
+    <main class="container d-flex flex-column flex-lg-row mt-5 flex-grow-1 text-center">
+      
+  
+
+      <section class="container d-flex flex-column align-items-center">
+
+      
+        
+        
+ 
+       
+        <div class="col-12 col-md-8 border border-1 border-black rounded py-1 my-3 container d-flex flex-column align-items-center">
+          <div class="col-4 col-xl-2 d-flex flex-column align-items-center">
+    
+         
+         </div>
+         <form id="updatepost">
+         
+            <label for="itle">Title</label>
+            <input type="text" class="form-control border border-3 rounded border-black" name="title" placeholder="Title" required>
+            
+      
+            <label for="body">Content</label>
+            <!-- <input i type="textarea" class="form-control border border-3 rounded border-black" rows="6" cols="20" id="floatingInput" placeholder="content here" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="only users with a noroff.no or a stud.noroff.no email can create an account"> -->
+            <textarea class="form-control border border-3 rounded border-black" name="body" rows="6" cols="20" name="body" placeholder="content" required></textarea>
+       
+        
+ 
+        
+    
+    
+
+      
+          <div class="form-check text-start mb-5">
+            
+          </div>
+          <button class="btn btn-primary px-5" type="submit">Post</button>
+         
+        
+        </form>
+         
+        
+   
+   
+      
+
+        
+      </section>
+    </main>
+    <footer class="bg-primary d-flex justify-content-center">
+      <p class="p-4">&copy; Martin Skaarer</p>
+  </footer>
+</body>
+</html>
