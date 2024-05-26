@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/index.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    
     <script src="/js/index.js" defer type="module"></script>
   
 </head>
@@ -28,7 +28,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center">
                      
             <li class="nav-item">
-              <a class="nav-link active" href="/index.html">Sign Out</a>
+              <button id="logout" class="nav-link active" href="/index.html">Sign Out</button>
             </li>
        
 
@@ -53,15 +53,26 @@
       <section class="container d-flex flex-column align-items-center">
 
         <div class="col-12 col-md-8 d-flex justify-content-between">
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+          
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Sort
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">by Date new to old</a></li>
-              <li><a class="dropdown-item" href="#">by Date old to new</a></li>
-              <li><a class="dropdown-item" href="#">by A-Z</a></li>
-              <li><a class="dropdown-item" href="#">by Z-A</a></li>
+              <li><button class="dropdown-item" href="#" id="sortDateNew">by Date new to old</button></li>
+              <li><button class="dropdown-item" href="#" id="sortDateOld">by Date old to new</button></li>
+              <li><button class="dropdown-item" href="#" id="sortA">by A-Z</button></li>
+              <li><button class="dropdown-item" href="#" id="sortZ">by Z-A</button></li>
             </ul>
           </div>
         

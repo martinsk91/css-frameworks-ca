@@ -22,5 +22,8 @@ export async function login(profile){
 
     save("token", accessToken);
     save("profile", user);
+    console.log("funker");
+    window.location.href = "/feed/"
+
 }
 

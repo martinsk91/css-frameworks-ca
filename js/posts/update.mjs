@@ -14,6 +14,8 @@ export async function updatePost(data){
     })
 
     const result = await response.json();
+    window.location.href = "/feed/"
+
 
 return result
 

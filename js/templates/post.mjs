@@ -13,7 +13,7 @@ export function postTemplate(postData){
 
     postCard.append(h2, postContent, postLink);
     h2.innerText = postData.title;
-    postContent.innerText = postData.body; 
+    postContent.innerText = postData.body;
     postLink.href = `post.html?id=${postData.id}`
     postLink.innerText = "edit post"
   
@@ -23,6 +23,7 @@ export function postTemplate(postData){
 
 
 export function renderPostTemplate(posts, parent){
+    parent.innerText = "";
     posts.forEach(postData => {
         const postElement = (postTemplate(postData));
         parent.append(postElement);

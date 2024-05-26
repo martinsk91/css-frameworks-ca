@@ -8,7 +8,7 @@ export function checkPath(){
     const path = location.pathname;
     console.log(path);
     
-    if(path === '/index.html'){
+    if(path === '/'){
         addloginListener(); 
        
         

@@ -14,6 +14,7 @@ export async function createPost(data){
     })
 
     const result = await response.json();
+    location.reload();
     return result
 
   

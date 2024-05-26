@@ -7,6 +7,7 @@ export function addUpdatePostListener(){
     const id = url.searchParams.get("id");
 
 
+
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         const form = event.target;
@@ -25,8 +26,14 @@ export function addUpdatePostListener(){
     
         console.log(post);
        updatePost(post);
+       
+       
+        
+       
     })
 }
+
+
 
 
 

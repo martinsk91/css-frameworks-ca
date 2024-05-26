@@ -8,8 +8,8 @@ export function addCreatePostListener(){
         const form = event.target;
     
     
-        const title = form.title.value;
-        const body = form.body.value;
+        let title = form.title.value;
+        let body = form.body.value;
    
     
         const post = {
@@ -20,5 +20,8 @@ export function addCreatePostListener(){
     
         console.log(post);
        createPost(post);
+       title = "";
+       body = "";
+      
     })
 }
