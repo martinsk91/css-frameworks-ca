@@ -7,7 +7,7 @@ const method = "post"
 export async function createPost(data){
     const postURL = variabels.API_URL + variabels.socialURL +
     variabels.postURL;
-    console.log(postURL);
+
     const response = await fetchToken(postURL, {
         method,
         body:JSON.stringify(data)
@@ -21,8 +21,5 @@ export async function createPost(data){
 
 }
 
-// createPost({
-//     title: "example",
-//     body: "example"
-// });
+
 

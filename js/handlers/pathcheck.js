@@ -5,8 +5,9 @@ import { addUpdatePostListener } from "./updatepost.js";
 
 
 export function checkPath(){
+
     const path = location.pathname;
-    console.log(path);
+    
     
     if(path === '/'){
         addloginListener(); 
@@ -25,4 +26,6 @@ export function checkPath(){
     else if(path === '/feed/post.html'){
         addUpdatePostListener();
     }
+
+    else {addloginListener();}
 };

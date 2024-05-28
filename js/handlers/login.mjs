@@ -18,9 +18,8 @@ export function addloginListener(){
             password: password
         }
     
-        console.log(profile);
+      
        login(profile);
     })
 }
 
-// addloginListener();

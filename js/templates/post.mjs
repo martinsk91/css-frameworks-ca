@@ -15,7 +15,7 @@ export function postTemplate(postData){
     h2.innerText = postData.title;
     postContent.innerText = postData.body;
     postLink.href = `post.html?id=${postData.id}`
-    postLink.innerText = "edit post"
+    postLink.innerText = "edit/delete post"
   
     return postCard;
   

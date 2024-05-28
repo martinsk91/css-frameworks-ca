@@ -24,7 +24,7 @@ export function addUpdatePostListener(){
          
         }
     
-        console.log(post);
+      
        updatePost(post);
        
        

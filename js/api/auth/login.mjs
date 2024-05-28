@@ -1,7 +1,7 @@
 import * as variabels from  "../variabels.js"
 import { save } from "../../storage/save.js";
-import { load } from "../../storage/load.js";
-import { remove } from "../../storage/remove.js";
+// import { load } from "../../storage/load.js";
+// import { remove } from "../../storage/remove.js";
 
 const path = "/auth/login";
 const method = "post";
@@ -22,7 +22,7 @@ export async function login(profile){
 
     save("token", accessToken);
     save("profile", user);
-    console.log("funker");
+   console.log(user);
     window.location.href = "/feed/"
 
 }

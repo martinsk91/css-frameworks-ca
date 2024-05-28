@@ -7,7 +7,7 @@ const method = "put"
 export async function updatePost(data){
     const postURL = variabels.API_URL + variabels.socialURL +
     variabels.postURL + `/${data.id}`;
-    console.log(postURL);
+
     const response = await fetchToken(postURL, {
         method,
         body:JSON.stringify(data)

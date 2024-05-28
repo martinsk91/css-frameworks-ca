@@ -18,7 +18,7 @@ export function addRegisterListener(){
             password: password
         }
     
-        console.log(profile);
+        
        register(profile);
 
     })
